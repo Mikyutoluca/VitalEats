@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d3ffa6;
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu{
+    top: 0;
+    left: 0;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    text-align: right;
+    background-color: rgb(15, 180, 75);
+    border-bottom-left-radius: 5px;
+    height: 60px;
+}
+
+.navegacion h2{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 35px;
+    font-family: italic;
+    color: rgb(72, 72, 210);
+}
+
+.logo{
+    text-align: left;
+    height: 20px;
+}
+
+.logo img{
+    border-radius: 50%;
+    padding: 4px;
+    width: 50px;
+    height: auto;
+    transition: transform 0.7s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+form{
+    background-color: #66ab48;
+    padding: 25px;
+    width: 340px;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(63, 63, 63);
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    background-color: #7ed957;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(63, 63, 63);
+    color: #000;
+}
+
+label{
+    font-size: 18x;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:hover{
+    box-shadow: 0px 0px 8px rgb(63, 63, 63);
+}
+
+button{
+    margin-top: 15px;
+    background-color: #d0ed41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0,3s;
+}
+
+button:hover{
+    background-color: #7ed957;
+    box-shadow: 0px 0px 8px rgb(63, 63, 63);
+}
