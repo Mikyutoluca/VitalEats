@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Galería de Libros y Cómics</title>
+    <link rel="stylesheet" href="estilo2.css" />
+    </head>
+    <body>
+        <header>
+        <div class="logo">
+                <img src="OIP__5_-removebg-preview.png">
+            </div>
+        </header>
+        <h1>Galería de Lecturas</h1>
+        <div class="galeria">
+            <div class="libro">
+            <h3>Ejemplo de título</h3>
+            <embed src="uploads/ejemplo.pdf" width="100%" height="400px" type="application/pdf" />
+            </div>
+        </div>
+
+        <a href="ComparteTuLibro.html">Subir otro</a>
+            <script>
+            fetch('uploads/registros.json')
+                .then(response => response.json())
+                .then(data => {
+                const galeria = document.querySelector('.galeria');
+                galeria.innerHTML = ''; // Limpia el contenido actual
+                if (data.length === 0) {
+                    galeria.innerHTML = '<p>No hay libros ni cómics subidos todavía.</p>';
+                    return;
+                }
+                data.reverse().forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'libro';
+                    card.innerHTML = `
+                    <h3>${item.titulo}</h3>
+                    <embed src="uploads/${item.archivo}" type="application/pdf" width="100%" height="400px" />
+                    `;
+                    galeria.appendChild(card);
+                });
+                })
+                .catch(error => {
+                console.error('Error al cargar registros.json:', error);
+                });
+            </script>
+        <script src="jfkkog.js"></script>
+    </body>
+</html>
