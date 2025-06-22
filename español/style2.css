@@ -1,0 +1,99 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.encabezado h1{
+    margin: 0;
+    font-size: 2em;
+}
+
+.encabezado p{
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.galeria h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.libro{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.libro h3{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.libro img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.libro2{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.libro2 h3{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.libro2 img{
+    width: 200px;
+    height: 310px;
+    border-radius: 5px;
+}
+
+.logo{
+    margin-bottom: -80px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 90px;
+}
+
+.logo img{
+    border-radius: 50%;
+    padding: 4px;
+    width: 80px;
+    height: auto;
+    transition: transform 0.7s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
